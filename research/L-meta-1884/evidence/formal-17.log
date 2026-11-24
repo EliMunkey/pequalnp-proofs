@@ -1,0 +1,6 @@
+'EightVertexLifts.mask1020_ge13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EightVertexLifts.exact1020' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenBound17.public_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenSixRoots.original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NineCert.fifteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NineCert.all_deletions' depends on axioms: [propext, Classical.choice, Quot.sound]

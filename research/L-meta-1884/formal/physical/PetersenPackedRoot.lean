@@ -30,8 +30,8 @@ private theorem inputs_eq : base.map (· ∘ row) = (inputs 10).map read := by
   funext i
   exact (read_pack (fun x : Fin 1024 => x.val.testBit i.val)).symm
 
-theorem signed_of_words (h : NoAtMost (inputs 10) target 17) :
-    ∀ k ≤ 17, ∀ W, Run base k W → ¬ Av W PetersenTarget := by
+theorem signed_of_words {K : Nat} (h : NoAtMost (inputs 10) target K) :
+    ∀ k ≤ K, ∀ W, Run base k W → ¬ Av W PetersenTarget := by
   intro k hk W r o
   have rr := sampleRun row r
   rw [inputs_eq] at rr
