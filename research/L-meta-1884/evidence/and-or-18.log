@@ -1,0 +1,7 @@
+states 4194304 root cases 1
+states 8388608 root cases 3
+states 12582912 root cases 4
+states 16777216 root cases 5
+states 20971520 root cases 6
+states 25165824 root cases 7
+petersen budget 18 found 0 states 25582855 memo_hits 1082835 functions 319660 boundary 38 seconds 188.979

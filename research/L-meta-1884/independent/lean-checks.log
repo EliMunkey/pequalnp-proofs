@@ -1,0 +1,4 @@
+Lean (version 4.36.0, arm64-apple-darwin24.6.0, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+PinPotential.lean returned 0
+BoundaryDominance.lean returned 0
+PetersenBoundary.lean returned 0

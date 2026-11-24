@@ -1,0 +1,104 @@
+{
+  "(2, 1)": {
+    "mask": 3,
+    "cost": 1,
+    "runs": []
+  },
+  "(3, 6)": {
+    "mask": 7,
+    "cost": 2,
+    "runs": []
+  },
+  "(4, 44)": {
+    "mask": 15,
+    "cost": 4,
+    "runs": [
+      "delmask1008 gates 3 sym 0 found 0 states 1 branches 0 memo_hits 0 tables 5 seconds 0.00196071"
+    ]
+  },
+  "(4, 12)": {
+    "mask": 45,
+    "cost": 3,
+    "runs": []
+  },
+  "(4, 56)": {
+    "mask": 51,
+    "cost": 3,
+    "runs": []
+  },
+  "(5, 236)": {
+    "mask": 31,
+    "cost": 7,
+    "runs": [
+      "delmask992 gates 6 sym 0 found 0 states 101 branches 100 memo_hits 0 tables 106 seconds 0.0001605"
+    ]
+  },
+  "(5, 368)": {
+    "mask": 47,
+    "cost": 5,
+    "runs": [
+      "delmask976 gates 4 sym 0 found 0 states 1 branches 0 memo_hits 0 tables 6 seconds 1.8167e-05"
+    ]
+  },
+  "(5, 736)": {
+    "mask": 55,
+    "cost": 5,
+    "runs": [
+      "delmask968 gates 4 sym 0 found 0 states 2 branches 1 memo_hits 0 tables 7 seconds 1.7834e-05"
+    ]
+  },
+  "(6, 7840)": {
+    "mask": 63,
+    "cost": 8,
+    "runs": [
+      "delmask960 gates 7 sym 0 found 0 states 326 branches 325 memo_hits 70 tables 206 seconds 0.00544292"
+    ]
+  },
+  "(6, 25760)": {
+    "mask": 111,
+    "cost": 7,
+    "runs": [
+      "delmask912 gates 6 sym 0 found 0 states 29 branches 28 memo_hits 4 tables 27 seconds 7.2875e-05"
+    ]
+  },
+  "(6, 20224)": {
+    "mask": 119,
+    "cost": 6,
+    "runs": [
+      "delmask904 gates 5 sym 0 found 0 states 5 branches 4 memo_hits 1 tables 9 seconds 2.1458e-05"
+    ]
+  },
+  "(6, 3440)": {
+    "mask": 189,
+    "cost": 8,
+    "runs": [
+      "delmask834 gates 7 sym 0 found 0 states 157 branches 156 memo_hits 0 tables 163 seconds 0.000345709"
+    ]
+  },
+  "(6, 1184)": {
+    "mask": 250,
+    "cost": 5,
+    "runs": []
+  },
+  "(7, 1223424)": {
+    "mask": 127,
+    "cost": 9,
+    "runs": [
+      "delmask896 gates 8 sym 0 found 0 states 740 branches 739 memo_hits 214 tables 340 seconds 0.00695608"
+    ]
+  },
+  "(7, 255136)": {
+    "mask": 191,
+    "cost": 11,
+    "runs": [
+      "delmask832 gates 10 sym 0 found 0 states 250165 branches 250164 memo_hits 142235 tables 28840 seconds 0.936106"
+    ]
+  },
+  "(7, 1836192)": {
+    "mask": 251,
+    "cost": 8,
+    "runs": [
+      "delmask772 gates 7 sym 0 found 0 states 19 branches 18 memo_hits 0 tables 26 seconds 8.9583e-05"
+    ]
+  }
+}

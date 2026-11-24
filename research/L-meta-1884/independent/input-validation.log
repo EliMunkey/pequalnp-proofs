@@ -1,0 +1,5 @@
+snapshot-delmask5.txt: verified 472 exact cofactor truth tables and lower bound dependencies.
+snapshot-delmask3.txt: verified 462 exact cofactor truth tables and lower bound dependencies.
+snapshot-deleted.txt: verified 1938 exact cofactor truth tables and lower bound dependencies.
+snapshot-petersen.txt: verified 3040 exact cofactor truth tables and lower bound dependencies.
+120 explicit Petersen relabelings cover 45 unordered and 90 ordered distinct input pairs.

@@ -1,0 +1,30 @@
+mask=31 k=6 dual=0 boundary=11 pins=0 cone=0 result=UNSAT nodes=25 memo=0 pin=0 cone=0 dominated=232 retire=0 sec=8.525e-05
+
+mask=31 k=7 dual=0 boundary=11 pins=0 cone=0 result=SAT nodes=10 memo=0 pin=0 cone=0 dominated=32 retire=0 sec=0.000145709
+0 1 0 0 0 3
+0 3 0 0 1 2
+1 3 0 0 1 0
+2 5 0 0 1 0
+4 6 0 0 0 0
+7 8 0 0 0 0
+9 10 0 0 1 0
+
+Positive witness independently agrees on every one of the 32 original inputs.
+mask=189 k=7 dual=0 boundary=14 pins=0 cone=0 result=UNSAT nodes=38 memo=0 pin=0 cone=0 dominated=425 retire=0 sec=0.000129292
+
+mask=189 k=8 dual=0 boundary=14 pins=0 cone=0 result=SAT nodes=82 memo=5 pin=0 cone=0 dominated=678 retire=6 sec=0.000188459
+0 2 0 0 1 3
+0 5 0 0 1 2
+2 5 0 0 1 0
+3 6 0 0 0 0
+4 7 0 0 0 0
+1 8 0 0 0 0
+9 10 0 0 1 0
+11 12 0 0 1 0
+
+Positive witness independently agrees on every one of the 64 original inputs.
+mask=1022 k=15 dual=0 boundary=32 pins=1938 cone=12 result=UNSAT nodes=683076 memo=148218 pin=3016475 cone=88031 dominated=7895241 retire=316447 sec=6.55228
+
+mask=1022 k=15 dual=1 boundary=29 pins=1938 cone=12 result=UNSAT nodes=1377920 memo=335597 pin=5493906 cone=170001 dominated=15824181 retire=662474 sec=13.2114
+
+mask=1023 k=18 dual=0 boundary=38 pins=3040 cone=12 result=UNSAT nodes=32942413 memo=1252071 pin=169609362 cone=2015954 dominated=408102997 retire=14886472 sec=346.753
