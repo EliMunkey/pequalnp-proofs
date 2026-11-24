@@ -1,0 +1,3 @@
+visited 8388608 cache=600000 elapsed=168.699
+visited 16777216 cache=600000 elapsed=357.296
+mask=1023 k=18 dual=-1 boundary=30 pins=3040 cone=20 result=UNSAT nodes=21087660 memo=202503 pin=97534136 cone=3075142 dominated=329817072 retire=10102503 sec=443.783
