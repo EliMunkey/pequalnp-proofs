@@ -19,6 +19,8 @@ Lean independently proves that every circuit for the original problem needs at l
 
 The signed nine-input subproblem gives a separate way to measure the remaining gap. Lean excludes all circuits through 14 signed binary gates on each of the ten vertex deletions. A stronger exhaustive search excludes 15 signed gates on 512 rows. The released program reproduced that result from scratch after visiting 32,045,906 states. [Nine-input Lean proof](formal-nine/README.md) · [Stronger exhaustive replay](signed-nine/README.md)
 
+Lean also proves the exact signed minimum for 59,038 restrictions of the ten-input problem. For the ten single-vertex deletions, a checked 16-gate witness matches the stronger exhaustive exclusion. These results give exact minima for all proper restrictions when the computational and Lean results are combined. [Restriction catalogue and witness](cofactors/README.md)
+
 ## Replay
 
 The primary replay requires Python 3.10 or later and a C++17 compiler. It uses a temporary directory for compiled binaries and generated tables. From this directory run

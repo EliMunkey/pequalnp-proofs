@@ -1,0 +1,4 @@
+'PetersenMaskCofactor.unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenMaskCofactor.except_one_zero_and_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenMaskCofactor.unconditional_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenDeletionUpper.all' depends on axioms: [propext, Classical.choice, Quot.sound]
