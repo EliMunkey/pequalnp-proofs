@@ -21,6 +21,8 @@ The signed nine-input subproblem gives a separate way to measure the remaining g
 
 Lean also proves the exact signed minimum for 59,038 restrictions of the ten-input problem. For the ten single-vertex deletions, a checked 16-gate witness matches the stronger exhaustive exclusion. These results give exact minima for all proper restrictions when the computational and Lean results are combined. [Restriction catalogue and witness](cofactors/README.md)
 
+A further Lean theorem reduces an 18-gate lower bound for the posted evaluator to 18 explicit first-gate questions on seven or eight inputs. The ten-input search now has a checked proof of that implication. [Remaining obligations and reproducible Lean sources](first-gates/README.md)
+
 ## Replay
 
 The primary replay requires Python 3.10 or later and a C++17 compiler. It uses a temporary directory for compiled binaries and generated tables. From this directory run
