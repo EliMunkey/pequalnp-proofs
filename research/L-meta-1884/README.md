@@ -15,7 +15,7 @@ A second implementation independently excluded both cases. It visited 1,176,021 
 
 The first search counts binary gates only. A legal circuit that pays for a NOT, a degenerate gate or an unused gate has at most 17 effective binary gates and falls under the first exclusion. The second search covers the only remaining case. A Lean proof establishes this implication for the project's actual evaluator, including its handling of missing wires, duplicated inputs and arbitrary output indices. [Lean bridge](lean/PetersenPhysicalBoundary.lean)
 
-The finite searches run as ordinary programs. Lean verifies the bridge, the 38-input compression and auxiliary accounting lemmas. The full statement does not currently have an assumption-free Lean proof in this package. The existing public pull request contains the earlier reduction and has its own checker status.
+Lean independently proves that every circuit for the original problem needs at least **15 gates**, and checks the 20-gate witness directly in the posted evaluator. The [formal proof and replay instructions](formal/README.md) give both theorem names. Lean also verifies the bridge, the 38-row compression and auxiliary accounting lemmas. The two exhaustive searches through 18 gates run as ordinary programs. The full statement does not currently have an assumption-free Lean proof in this package. The existing public pull request contains the earlier reduction and has its own checker status.
 
 ## Replay
 

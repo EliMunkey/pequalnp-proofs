@@ -1,0 +1,129 @@
+Lean (version 4.36.0, arm64-apple-darwin24.6.0, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Checking PetersenPhysicalBoundary
+'PetersenSignedBridge.L_meta_1884_of_exclusions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenSignedBridge.L_meta_1884_of_fresh_exclusions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenSignedBridge.PhysicalBoundary.physical_compressed_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenWordCost
+Checking PetersenPinDrop
+Checking PetersenPinWord
+Checking PetersenSignalCut
+Checking PetersenForwardSearch
+Checking PetersenPathFour
+'PetersenPathFour.no_three_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenSmallPins
+'PetersenGraphCosts.mask47_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask55_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask111_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask119_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask63_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask189_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask127_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask191_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask251_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenCycleLifts
+Checking PetersenFrontier
+'PetersenFrontier.L_meta_1884_of_frontier_exclusions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenFrontier.petersen_signed_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenFrontier.petersen_fresh_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenFrontier.fresh_keyed_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenFrontier.fresh_schedule' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenShortPrefix
+'PetersenShortPrefix.exclude_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenPackedFrontier
+'PetersenPackedFrontier.realize' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenPrefixCost
+'PetersenPrefixCost.certified' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenTightPrefix
+'PetersenTightPrefix.tight_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenTightCost
+'PetersenTightCost.certified' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenCycleFive
+'PetersenCycleFive.no_six_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Certified111
+'PetersenGraphCosts.M111.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenComponentLifts
+'PetersenGraphCosts.mask251_exact_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenCofactor
+Checking PetersenTracePin
+Checking PetersenMinor
+Checking PetersenFrontierSearch
+'PetersenFrontierSearch.excludes_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenPackedPin
+Checking PetersenLayerCheck
+'PetersenLayerCheck.root_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking D9Data
+Checking D9L1S0
+Checking D9L1S1
+Checking D9L2S0
+Checking D9L2S1
+Checking D9L2S2
+Checking D9L3S0
+Checking D9L2S3
+Checking D9L4S0
+Checking D9L3S1
+Checking D9L2S4
+Checking D9L2S7
+Checking D9L3S2
+Checking D9L2S8
+Checking D9L2S9
+Checking D9L2S10
+Checking D9L2S11
+Checking D9L2S12
+Checking D9L1S2
+Checking D9L2S5
+Checking D9L2S6
+Checking D9L1S3
+Checking D9L2S13
+Checking D9L1S4
+Checking D9L1S5
+Checking D9L1S6
+Checking D9L0S0
+Checking D9Closing
+'Deleted191Cost9.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenFirstUse
+Checking PetersenPairMinor
+Checking PetersenBound15
+'PetersenBound15.public_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenFourteen
+'PetersenFourteen.binary_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenFourteen.public_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenTwelve
+'PetersenTwelve.binary_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenTwelve.public_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenWitnessBounds
+'PetersenBounds.at_least_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenBounds.twenty_works' depends on axioms: [propext]
+Checking PetersenPhysicalPin
+Checking PetersenFiniteDSL
+'PetersenFiniteDSL.reference_controls' depends on axioms: [propext]
+'PetersenFiniteDSL.L_meta_1884_of_finite_checks' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenSingleton
+'PetersenSingleton.minimum_extend' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenSingleton.minimum_disjunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenBareBases
+'PetersenGraphCosts.mask45_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask51_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask250_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Audit
+'PetersenBound15.public_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenFourteen.public_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenPackedPin.rejects_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenTwelve.public_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenBounds.twenty_works' depends on axioms: [propext]
+'PetersenPhysicalPin.restrict_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenFiniteDSL.L_meta_1884_of_finite_checks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenFrontier.L_meta_1884_of_frontier_exclusions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenSingleton.minimum_disjunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenGraphCosts.mask119_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenWordEnum
+Checking Cost3
+'PetersenGraphCosts.mask3_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Cost7
+'PetersenGraphCosts.mask7_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenPendant
+'PetersenPendant.mask63_of_cycle5' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenMask63ByPin
+'PetersenFrontierExamples.mask63_by_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PetersenSearchDecision
+'PetersenForwardSearch.search_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checked 68 source modules and the axiom report.
