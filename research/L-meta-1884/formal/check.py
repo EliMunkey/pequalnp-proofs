@@ -6,10 +6,15 @@ import re
 import shutil
 import subprocess
 import tempfile
+from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 
 HERE = Path(__file__).resolve().parent
 BRIDGE = HERE.parent / "lean" / "PetersenPhysicalBoundary.lean"
-REPORT = """import PetersenBound15
+REPORT = """import PetersenBound16
+import PetersenBound15
+import PetersenPackedRoot
+import PetersenPhysicalOrbit
+import PetersenPhysicalProjection
 import PetersenFourteen
 import PetersenPackedPin
 import PetersenTwelve
@@ -20,6 +25,10 @@ import PetersenFrontierSearch
 import PetersenSingleton
 import PetersenSmallPins
 import PetersenBareBases
+#print axioms PetersenBound16.public_lower
+#print axioms PetersenPackedRoot.original_of_word_exclusions
+#print axioms PetersenPhysicalOrbit.no_physical
+#print axioms PetersenPhysicalProjection.blocks
 #print axioms PetersenBound15.public_lower
 #print axioms PetersenFourteen.public_lower
 #print axioms PetersenPackedPin.rejects_sound
@@ -59,13 +68,15 @@ def checked_modules(files):
     return order
 
 
-def run(project, bridge):
+def run(project, bridge, jobs):
     project = project.resolve()
     def lake(*args):
         return subprocess.check_output(["lake", "env", *args], cwd=project, text=True).strip()
     lean = Path(lake("lean", "--print-prefix")) / "bin" / "lean"
     paths = [str((project / p).resolve()) for p in lake("printenv", "LEAN_PATH").split(os.pathsep) if p]
     sources = [bridge.resolve(), *HERE.rglob("*.lean")]
+    if len({p.stem for p in sources}) != len(sources):
+        raise ValueError("Duplicate Lean module name in the package.")
     with tempfile.TemporaryDirectory(prefix="petersen-lean-") as tmp:
         work = Path(tmp)
         env = dict(os.environ, LEAN_PATH=os.pathsep.join([str(work), *paths]))
@@ -76,8 +87,8 @@ def run(project, bridge):
         order = checked_modules(list(work.glob("*.lean")))
         allowed = {"propext", "Classical.choice", "Quot.sound"}
         print(lake("lean", "--version"), flush=True)
-        for name in order:
-            print(f"Checking {name}", flush=True)
+        def build(name):
+            logs = [f"Checked {name}"]
             result = subprocess.run([str(lean), "-o", name+".olean", name+".lean"], cwd=work,
                                     env=env, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
             declared = re.findall(r"depends on axioms:\s*\[([^\]]*)\]", result.stdout)
@@ -85,9 +96,29 @@ def run(project, bridge):
                 print(result.stdout, flush=True)
                 raise SystemExit(result.returncode or 1)
             for line in re.findall(r"'[^']+' depends on axioms:\s*\[[^\]]*\]", result.stdout):
-                print(" ".join(line.split()), flush=True)
+                logs.append(" ".join(line.split()))
             if name == "Audit" and len(declared) != REPORT.count("#print axioms"):
                 raise SystemExit("Incomplete axiom report.")
+            return logs
+        names = set(order)
+        pending = {name: set(re.findall(r"^import (\S+)", (work / (name+".lean")).read_text(), re.M)) & names for name in order}
+        done = set()
+        running = {}
+        with ThreadPoolExecutor(max_workers=jobs) as workers:
+            while pending or running:
+                for name in list(pending):
+                    if len(running) == jobs:
+                        break
+                    if pending[name] <= done:
+                        running[workers.submit(build, name)] = name
+                        del pending[name]
+                if not running:
+                    raise ValueError("Compiler dependency cycle.")
+                finished, _ = wait(running, return_when=FIRST_COMPLETED)
+                for task in finished:
+                    name = running.pop(task)
+                    print("\n".join(task.result()), flush=True)
+                    done.add(name)
         print(f"Checked {len(order)-1} source modules and the axiom report.", flush=True)
 
 
@@ -95,5 +126,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("project", type=Path, help="lean directory of the built, pinned proof repository")
     parser.add_argument("--bridge", type=Path, default=BRIDGE)
+    parser.add_argument("--jobs", type=int, default=2, choices=range(1,17), metavar="N", help="parallel compiler jobs (1–16, default 2)")
     args = parser.parse_args()
-    run(args.project, args.bridge)
+    run(args.project, args.bridge, args.jobs)

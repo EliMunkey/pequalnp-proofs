@@ -1,0 +1,6 @@
+Lean 4.36.0. Lower-bound and reduction declarations from the checked modules.
+'ThetaCert.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenBound16.public_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenPackedRoot.original_of_word_exclusions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenPhysicalProjection.restrict_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenPhysicalProjection.blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
