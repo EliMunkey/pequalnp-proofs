@@ -1,0 +1,6 @@
+'PetersenReducedStarts.original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenRemainingCases.common' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenRemainingCases.full00' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenRemainingCases.full01' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenRemainingCases.full41' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PetersenRemainingCases.upper40' depends on axioms: [propext, Classical.choice, Quot.sound]
