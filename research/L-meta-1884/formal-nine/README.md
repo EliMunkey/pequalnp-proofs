@@ -12,4 +12,4 @@ cd petersen-nine
 python3 replay.py --project /absolute/path/to/pequalnp-proofs/lean --jobs 4
 ```
 
-The archive SHA-256 is `65eea9edd992bc479559e01bec3c8da55d7d5713cdf07b6e63dbdc86dd482a88`.
+The archive SHA-256 is `f758f937d1f867e08a646870b0e7160503a6b1a8b108a55c480700c8512f2cde`.
